@@ -23,7 +23,7 @@ namespace Estructura_de_datos
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_OptionList, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _OptionList.Length - 1);
             return;

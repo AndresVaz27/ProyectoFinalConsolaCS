@@ -38,7 +38,7 @@ namespace Estructura_de_datos.Clases.Menus
             {
                 Operation = 0;
                 _MenuStructures.PrintArray(_TypeStack, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _TypeStack.Length);
             return;
@@ -219,10 +219,10 @@ namespace Estructura_de_datos.Clases.Menus
             var x = 0;
 
             Console.Clear();
-            Console.Write("Insert one data: ");
+            Console.Write("How many numbers would you like to add: ");
             x = int.Parse(Console.ReadLine());
             Console.Clear();
-            Console.WriteLine("\t@Israel I22050327 Algorithm: " + Name + "\n");
+            Console.WriteLine("\t@Andres Vazquez I22050385 Algorithm: " + Name + "\n");
             int[] array = new int[x];
 
             for (int i = 0; i < array.Length; i++)
@@ -239,10 +239,10 @@ namespace Estructura_de_datos.Clases.Menus
             var values = 5;
 
             Console.Clear();
-            Console.Write("Insert one data: ");
+            Console.Write("How many numbers would you like to add: ");
             Lenght = int.Parse(Console.ReadLine());
             Console.Clear();
-            Console.WriteLine("\t@Israel I22050327 Algorithm: " + Name + "\n");
+            Console.WriteLine("\t@Andres Vazquez I22050385 Algorithm: " + Name + "\n");
             List<double> _List = new List<double>();
 
             for (int i = Minon; i < Lenght; i++)

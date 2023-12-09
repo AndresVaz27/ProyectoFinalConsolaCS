@@ -22,7 +22,7 @@ namespace Estructura_de_datos.Clases.Menus
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_OptionTree, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = OptionTree(Operation);
             } while (Operation != _OptionTree.Length);
             return;
@@ -43,19 +43,19 @@ namespace Estructura_de_datos.Clases.Menus
             switch (Tree)
             {
                 case EnumOperationsTree.Add:
-                    Console.Write("Insert one data: ");
+                    Console.Write("Data: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Add(Data);
                     break;
 
                 case EnumOperationsTree.Delete:
-                    Console.Write("Delete one data: ");
+                    Console.Write("Data: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Delete(Data);
                     break;
 
                 case EnumOperationsTree.Search:
-                    Console.Write("Insert one data: ");
+                    Console.Write("Data: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Search(Data);
                     break;

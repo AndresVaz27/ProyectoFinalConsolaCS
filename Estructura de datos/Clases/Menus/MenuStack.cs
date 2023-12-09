@@ -22,7 +22,7 @@ namespace Estructura_de_datos.Clases.Menus
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_TypeStack, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _TypeStack.Length);
             return;

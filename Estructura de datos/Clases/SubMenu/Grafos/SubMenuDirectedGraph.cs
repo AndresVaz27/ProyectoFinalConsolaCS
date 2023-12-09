@@ -22,7 +22,7 @@ namespace Estructura_de_datos.Clases.Menus.SubMenuGrafos
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_Option, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _Option.Length);
             return;
@@ -43,51 +43,51 @@ namespace Estructura_de_datos.Clases.Menus.SubMenuGrafos
             switch (Stack)
             {
                 case EnumOperationsGraph.AddVertex:
-                    Console.WriteLine("Insert One data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
                     _Items.AddVertex(DataF);
                     break;
 
                 case EnumOperationsGraph.AddEdge:
-                    Console.WriteLine("Insert First data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
-                    Console.WriteLine("Insert Second data: ");
+                    Console.WriteLine("Second Data: ");
                     try { DataS = int.Parse(Console.ReadLine()); } catch { }
                     _Items.AddEdge(DataF, DataS);
                     break;
 
                 case EnumOperationsGraph.RemoveVertex:
-                    Console.WriteLine("Insert One data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
                     _Items.RemoveVertex(DataF);
                     break;
 
                 case EnumOperationsGraph.RemoveEdge:
-                    Console.WriteLine("Insert First data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
-                    Console.WriteLine("Insert Second data: ");
+                    Console.WriteLine("Second Data: ");
                     try { DataS = int.Parse(Console.ReadLine()); } catch { }
                     _Items.RemoveEdge(DataF, DataS);
                     break;
 
                 case EnumOperationsGraph.ExistVertex:
-                    Console.WriteLine("Insert One data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
                     _Items.VertexExists(DataF);
                     Console.ReadKey();
                     break;
 
                 case EnumOperationsGraph.ExistEdge:
-                    Console.WriteLine("Insert First data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
-                    Console.WriteLine("Insert Second data: ");
+                    Console.WriteLine("Second Data: ");
                     try { DataS = int.Parse(Console.ReadLine()); } catch { }
                     _Items.EdgeExists(DataF, DataS);
                     Console.ReadKey();
                     break;
 
                 case EnumOperationsGraph.GetAllVertex:
-                    Console.WriteLine("Get All Vertices");
+                    Console.WriteLine("Get All Vertex");
                     _Items.GetAllVertices();
                     Console.ReadKey();
                     break;
@@ -99,7 +99,7 @@ namespace Estructura_de_datos.Clases.Menus.SubMenuGrafos
                     break;
 
                 case EnumOperationsGraph.Transverse:
-                    Console.WriteLine("Insert One data: ");
+                    Console.WriteLine("Data: ");
                     try { DataF = int.Parse(Console.ReadLine()); } catch { }
                     _Items.TraverseBFS(DataF);
                     Console.ReadKey();

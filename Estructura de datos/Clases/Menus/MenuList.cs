@@ -25,7 +25,7 @@ namespace Estructura_de_datos
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_TypeList, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _TypeList.Length);
             return;

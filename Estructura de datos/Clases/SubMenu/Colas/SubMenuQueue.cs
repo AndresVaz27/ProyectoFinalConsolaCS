@@ -23,7 +23,7 @@ namespace Estructura_de_datos.Clases.Menus.SubMenuColas
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_OptionList, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _OptionList.Length - 1);
             return;
@@ -55,7 +55,7 @@ namespace Estructura_de_datos.Clases.Menus.SubMenuColas
                     break;
 
                 case EnumOperationsQueue.Enqueue:
-                    Console.WriteLine("Insert one data: ");
+                    Console.WriteLine("How many numbers would you like to add: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Enqueue(Data);
                     break;

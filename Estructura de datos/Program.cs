@@ -13,7 +13,7 @@ namespace Estructura_de_datos
             {
                 Option = 0;
                 Menu.PrintArray(Menu._TypeDataStructures, Menu.Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Option = Menu.Option(Option);
             } while (Option != 7);
         }

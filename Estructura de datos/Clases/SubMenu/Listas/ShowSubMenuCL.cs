@@ -23,7 +23,7 @@ namespace Estructura_de_datos
             {
                 Operation = 0;
                 _ShowMenuStructures.PrintArray(_OptionList, Name);
-                Console.Write("Select one option: ");
+                Console.Write("Write the number of one option: ");
                 Operation = Option(Operation);
             } while (Operation != _OptionList.Length - 1);
             return;
@@ -55,7 +55,7 @@ namespace Estructura_de_datos
                     break;
 
                 case EnumOperationsList.Add:
-                    Console.Write("Insert one data: ");
+                    Console.Write("Insert data: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Add(Data);
                     break;
